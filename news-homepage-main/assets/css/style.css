@@ -1,0 +1,265 @@
+body{
+    margin:3em 5em;
+    font-family: sans-serif;
+} 
+  li{
+    list-style-type:none;
+    padding:  0 1em;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:2em 0; 
+    background-color: white;
+  }
+  nav ul{
+    display: flex;
+  }
+li:hover{
+    color:rgb(224, 47, 47);
+    cursor: pointer;
+}
+.mobileview{
+    visibility: hidden;
+    height: 0px;
+}
+.image1{
+    display: grid;
+    grid-template-columns:70% 25%;
+    grid-gap:1.5em;
+}
+img{
+    width: 100%;
+    height: 50%;
+}
+.sidenav{
+    
+    position: absolute;
+    right:0px;
+    top: 0px;
+    width: 0px;
+    background-color:white;
+    height: 100%;
+    overflow-x: hidden;
+    transition: 0.5s;
+    z-index: 10001;
+}
+.sidenav ul{
+    padding: 20px 10px;
+}
+
+.sidenav li{
+    display: flex;
+    
+	font-size: 15px;
+	font-weight: 500;
+	padding: 5px 0;
+	margin:  20px;
+	transition: all .50s ease;
+}
+
+.closeBtn{
+   
+    display: flex;
+    justify-content: right;
+    padding: 16px;
+}
+.menu-icon{
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    top:10px;
+    right:0px;
+     
+}
+.closeBtn img{
+    cursor: pointer;
+    width: fit-content;
+}
+ 
+.grid1-content h1{
+    font-size: 50px;
+    font-weight: 700;
+}
+.grid1-content{
+    display:grid;
+    grid-template-columns:300px auto;
+
+}
+button{
+    border:none;
+    outline:none;
+    background-color: rgb(224, 47, 47);
+    color:white;
+    padding: 1.2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: 1.2em;
+    letter-spacing: 3px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+button:hover{
+    background-color: black;
+    cursor: pointer;
+}
+.contents p{
+    opacity:0.7;
+    font-size: 18px;
+    padding:1em;
+    line-height:1.5em;
+}
+.grid2{
+    background-color: black;
+    padding: 0 1em;
+  margin: 0;
+  width: 100%;
+  height:500px;
+    
+}
+.grid2-content-main {
+    color:rgb(228, 144, 81);
+}
+ .grid2-content > h3{
+    color:white; 
+ }
+ .grid2-content > h3:hover{
+    color:rgb(228, 144, 81);
+    cursor: pointer;
+ }
+ .grid2-content p{
+    opacity:0.5;
+    color:white;
+    line-height: 2em;
+ }
+ hr{
+    opacity: 0.1;
+ }
+  
+.boxes{
+   
+    display: grid;
+    grid-gap: 50px;
+    margin-bottom:2em;
+    grid-template-columns: repeat(3,1fr);
+}
+.retropcs,.gaming-growth,.toplaptops{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns:30% auto;
+}
+.img img{
+    height: 100%;
+}
+.boxes h1{
+    opacity:0.3;
+    font-size: 2em;
+    margin: 0;
+
+}
+.boxes h2{
+    font-size: 1.2em;
+    font-weight:bold;
+    margin: 0.5em 0;
+}
+.boxes h2:hover{
+    color:rgb(224, 47, 47);
+    cursor: pointer;
+    font-weight: bold;
+}
+.boxes p{
+    opacity: 0.5;
+    line-height: 1.5em;
+    
+}
+
+@media screen and (max-width:690px) {
+     body{
+        margin:1em;
+        font-family:sans-serif;
+     }
+    .navbar{
+        display: none;
+    }
+      nav {
+        padding: 0;
+        background:none;
+      }
+      .sidenav{
+        visibility: visible;
+      }
+      .sidenav ul{
+        display: block;
+      }
+      .sidenav li:hover{
+        color:rgb(224, 47, 47);
+      }
+    .menu-icon{
+        display: block;
+        margin: 1em;
+    }
+    .mobileview{
+        visibility: visible;
+        height: auto;
+      
+    }
+    .lapview{
+        visibility: hidden;
+        height: 0px;
+    }
+    /* .icon-menu{
+        display:block;
+        position: absolute;
+        right:0px;
+        top: 30px;
+    } */
+    .image1{
+        display: block;
+        margin: 0;
+    }
+    .grid1-content{
+        display: block;
+    }
+    .grid1-content h1{
+        margin:0.5em 0;
+        padding: 0;
+        line-height:1em;
+        font-size: 40px;
+    }
+    .grid1-content p{
+        padding: 0;
+        margin:0.5em 0.3em;
+        font-size: 15px;
+    }
+    .grid2-content p{
+        
+        line-height: 1.5em;
+     }
+    button{
+        margin:1em 0;
+        padding:1em 2em;
+    }
+    .grid2{
+        padding: 1em;
+        margin:2em 0;
+        width: 90%;
+        height: 470px;
+    }
+    .boxes{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(3,1fr);
+        grid-gap: 30px;
+        width: 100%;
+    }
+    
+    .retropcs,.gaming-growth,.toplaptops{
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns:30% auto;
+    }
+    .boxes p{
+        margin-bottom: 0;
+    }
+    
+}

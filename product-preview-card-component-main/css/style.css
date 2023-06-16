@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@700;900&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+body{
+    margin:0;
+    background-color: #fae5f7;
+    width: 100%;
+    height:100%; 
+}
+.main{
+     
+    display:grid;
+    grid-template-columns:45% 50%; 
+     grid-template-rows: 30vw;
+    background-color: #ffffff;
+      margin: 9% auto;
+    grid-gap: 0 10px;
+    border-radius: 6px;
+   width: 34%;
+}
+ 
+img{
+    width: 100%;
+    height:100%;
+    
+  border-top-left-radius:6px;
+  border-bottom-left-radius: 6px;
+  
+
+}
+.content{
+    margin:0 10px;
+}
+.content > h6{
+    font-family: 'Montserrat', sans-serif;
+    opacity: 0.6;
+   letter-spacing: 6px;
+}
+.content .name{
+    font-family: 'Cardo', serif;
+    font-weight:bold;
+    font-size:33px;
+    margin:0;
+    line-height:1;
+}
+.content .des{
+    font-family: 'Montserrat', sans-serif;
+    opacity: 0.5;
+    font-weight:  bold;
+    font-size:1rem;
+
+    margin-bottom: 2px;
+}
+.amount p:nth-child(1){
+    color: rgb(20, 90, 70);
+    font-size: 25px;
+    opacity: 0.9;
+    font-weight:  bold;
+    font-family: 'Marcellus', serif;
+    
+}
+ .amount > p{
+    display:inline-block;
+    padding:4px;
+    margin:1;
+ }
+ .amount p:nth-child(2){
+    font-size: 12px;
+    color: rgb(20, 90, 70);
+    margin: 0;
+    text-decoration: line-through;
+ }
+ .button{
+          display: flex;
+          position: relative;
+    align-items: center;
+    
+}
+button{
+
+    background-color:rgb(20, 90, 70);
+    opacity: 0.8;
+    border:none;
+    padding:9px;
+    width: 100%;
+    border-radius: 6px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    
+}
+svg{
+    position: absolute;
+    margin-left: 20%;
+}
+@media  screen and (max-width:576px){
+     .main{
+        display: flex;
+        justify-content: center;
+         flex-wrap:wrap;
+         width:90%;
+         height:100%;
+         
+     }
+     img{
+        width: 100%;
+        height: 100%;
+        border-top-right-radius: 6px;
+        border-bottom-left-radius: 0;
+     }
+      button{
+  position:relative;
+  top:-10px;
+      }
+      svg{
+        position: absolute;
+        top:0;
+        margin-left: 30%;
+      }
+
+}
