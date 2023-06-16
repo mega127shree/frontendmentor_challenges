@@ -1,0 +1,92 @@
+@import './variables';
+.footer{
+    background:rgba(235, 233, 233, 0.418);
+     margin-top:100px;
+     @include width(100%);
+     position: relative;
+     @media(max-width:720px) {
+    position: relative;
+      padding:0;
+      @include width(100%); 
+     }
+     .svg-footer{
+        position: absolute;
+        top:0;
+        left:0;
+        z-index:-1;
+          
+     }
+    .footer-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin:0 11% 0 11%;
+        padding:43px 0 12px 0;
+        @media(max-width:720px){
+               display: block;
+                @include margin(0);
+               padding: 0;
+               h3{
+                  padding:5rem 0 0 0 ;
+                  text-align: center;
+               }
+              .social-media-icons{
+               display: flex;
+               justify-content: center;
+               
+              }
+
+
+        }        .homelink{
+            font-family: $navFont;
+            color:$homeLink;
+         }
+         a{
+            padding:10px;
+         }
+    }
+    hr{
+        @include width(78%);
+         @media(max-width:400px){
+            @include width(90%);
+            margin-top:1.5em;
+         }
+         @media(max-width:720px){
+            @include width(50%);
+         }
+
+    }
+    .queries-info{
+        margin:0 20% 0 12%;
+        display: flex;
+        justify-content: space-between;
+        font-family:$navFonttwo;
+        @media(max-width:720px){
+         display:flex;
+         flex-direction: column;
+         align-items: center;
+         @include margin(10px);
+        .ourcompany,.helpme,.contact,.others{
+         display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        }
+         div {
+            h4{
+                 color:$links;
+                 letter-spacing: 1.2px;
+                 font-size: $fontMin;
+                 padding:15px 0;
+            }
+              h3{
+                color:$buttonColor;
+                 letter-spacing: 1.2px;
+                 font-size:$fontMin;
+
+         }
+
+        }
+    }
+
+}

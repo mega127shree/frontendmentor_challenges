@@ -1,0 +1,15 @@
+export const Images={
+    introDesktop:require('../Images/image-intro-desktop.jpg'),
+    introMobile:require('../Images/image-intro-mobile.jpg'),
+    introRight:require('../Images/bg-pattern-intro-right-desktop.svg').default,
+    introLeftMobile:require('../Images/bg-pattern-intro-left-mobile.svg').default,
+    introLeft:require('../Images/bg-pattern-intro-left-desktop.svg').default,
+    introRightMobile:require('../Images/bg-pattern-intro-right-mobile.svg').default,
+    howWeWorkMobile:require('../Images/bg-pattern-how-we-work-mobile.svg').default,
+    howWeWork:require('../Images/bg-pattern-how-we-work-desktop.svg').default,
+    footer:require('../Images/bg-pattern-footer-desktop.svg').default,
+    footerMobile:require('../Images/bg-pattern-footer-mobile.svg').default,
+    hamburger:require('../Images/icon-hamburger.svg').default,
+    close:require('../Images/icon-close.svg').default,
+    navImage:require('../Images/bg-pattern-mobile-nav.svg').default,
+};

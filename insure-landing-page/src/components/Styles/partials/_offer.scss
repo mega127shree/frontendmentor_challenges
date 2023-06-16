@@ -1,0 +1,81 @@
+@import './variables';
+.offers{
+    margin:250px 0 0 100px;
+    @media(max-width:400px){
+        margin:150px 20px 100px 20px ;
+    }
+    @media   (min-width:401px) and (max-width:720px){
+        margin: 250px 10% 0 10%;
+    } 
+    div{
+        @media(max-width:400px)  {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        hr{
+            @include margin(0);
+            @include width(10%);
+            @media(max-width:400px){
+                @include width(30%);
+            }
+
+         }
+    }
+     
+    h1{
+        font-size:$fontMax;
+        @media(max-width:400px){
+             font-size:2rem;
+            text-align: center;
+        }
+        
+    }
+    .Scheme{
+        display:grid;
+        grid-template-columns:30% 30% 30%;
+        gap:0 10px;
+        @media(max-width:400px){
+            display: flex;
+            flex-direction: column;
+ justify-content:space-between;
+            .scheme1,.scheme2,.scheme3{
+                display: flex;
+                flex-direction: column;
+                 align-items: center;
+                  
+            }
+        }
+        @media(min-width:401px) and (max-width:720px){
+            display: flex;
+            flex-direction: column;
+            
+            .scheme1,.scheme2,.scheme3{
+                display: flex;
+                flex-direction: column;
+                 align-items: center;
+                  
+            }
+        }
+          h3{
+             font-size:1.5rem;
+             @media(max-width:400px){
+                margin-bottom:0;
+             }
+             }
+           p{
+            letter-spacing: 0.5px;
+            line-height:1.5em;
+            color:$links;
+         font-family: $navFonttwo;
+          font-size: $fontMintwo;
+          @media(max-width:400px){
+            text-align:center;
+            margin:10px 13px 30px 10px;
+          }
+          @media(min-width:401px) and (max-width:720px){
+            padding-bottom:20px;
+             }
+    }
+}
+}

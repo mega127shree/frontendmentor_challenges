@@ -1,0 +1,617 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background: rgb(11, 4, 28);
+  position: relative;
+}
+
+.homeLayout {
+  width: 100%;
+  height: 650px;
+  position: relative;
+  color: white;
+  display: grid;
+  grid-template-columns: 10% 60% auto;
+}
+@media (max-width: 600px) {
+  .homeLayout {
+    height: auto;
+    display: block;
+  }
+}
+.homeLayout .mobile-intro-right picture {
+  position: absolute;
+  left: 0;
+  top: 450px;
+}
+@media (min-width: 401px) and (max-width: 720px) {
+  .homeLayout .mobile-intro-right picture {
+    position: absolute;
+    left: 0;
+  }
+}
+.homeLayout .centerContent {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+}
+@media (max-width: 600px) {
+  .homeLayout .centerContent {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+}
+.homeLayout .centerContent hr {
+  margin: 5rem 0 0 0;
+  text-align: center;
+  width: 20%;
+}
+@media (max-width: 600px) {
+  .homeLayout .centerContent hr {
+    visibility: hidden;
+  }
+}
+.homeLayout .centerContent .desktop-image img {
+  width: 200%;
+  height: 115%;
+  margin: 30% 10% 0% 10%;
+}
+@media (max-width: 600px) {
+  .homeLayout .centerContent .desktop-image img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+}
+.homeLayout .centerContent .text {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 600px) {
+  .homeLayout .centerContent .text {
+    align-items: center;
+    text-align: center;
+  }
+}
+.homeLayout .centerContent .text h1 {
+  font-size: 4.5em;
+  padding: 50px 0 0 0px;
+  margin: 0px 0 30px 0;
+  line-height: 0.8;
+}
+@media (max-width: 600px) {
+  .homeLayout .centerContent .text h1 {
+    font-size: 2.9rem;
+    margin: 0;
+    padding: 10px;
+  }
+}
+@media (min-width: 401px) and (max-width: 968px) {
+  .homeLayout .centerContent .text h1 {
+    font-size: 2em;
+  }
+}
+@media (min-width: 1024px) {
+  .homeLayout .centerContent .text h1 {
+    font-size: 4.5em;
+  }
+}
+.homeLayout .centerContent .text p {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5em;
+}
+@media (max-width: 600px) {
+  .homeLayout .centerContent .text p {
+    margin: 10px;
+    width: 87%;
+  }
+}
+.homeLayout .centerContent .text .buttonLink {
+  background: none;
+  margin-left: 0px;
+  border: 2px solid white;
+  padding: 10px;
+  color: white;
+  letter-spacing: 1px;
+  font-family: "Roboto", sans-serif;
+  width: 25%;
+  margin: 1rem 0;
+}
+.homeLayout .centerContent .text .buttonLink:hover {
+  background-color: white;
+}
+@media (max-width: 600px) {
+  .homeLayout .centerContent .text .buttonLink {
+    padding: 0.5em 1.8em;
+    margin-top: 10px;
+    margin-bottom: 3rem;
+    width: 40%;
+  }
+}
+@media (min-width: 601px) and (max-width: 1140px) {
+  .homeLayout .centerContent .text .buttonLink {
+    width: 45%;
+  }
+}
+.homeLayout .centerContent .text .buttonLink a {
+  text-decoration: none;
+  color: white;
+}
+.homeLayout .centerContent .text .buttonLink a:hover {
+  color: black;
+}
+.homeLayout .images {
+  position: relative;
+}
+.homeLayout .images .pic2 {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+@media (max-width: 600px) {
+  .homeLayout .images .pic2 {
+    position: absolute;
+    top: -100px;
+  }
+}
+@media (min-width: 600px) and (max-width: 900px) {
+  .homeLayout .images .pic2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 80%;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 70px;
+  align-items: center;
+}
+.header .homelink {
+  font-family: "Krona One", sans-serif;
+  color: black;
+}
+@media (max-width: 600px) {
+  .header .homelink {
+    position: absolute;
+    left: 20px;
+    font-size: 1.3rem;
+  }
+}
+.header .nav-links {
+  padding-left: 100px;
+}
+.header .nav-links a {
+  text-decoration: none;
+  letter-spacing: 2px;
+  margin: 10px;
+  color: grey;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+}
+.header .nav-links a:hover {
+  color: black;
+}
+@media (max-width: 600px) {
+  .header .nav-links {
+    display: none;
+  }
+}
+.header .nav-links svg {
+  display: none;
+}
+.header .nav-links-mobile {
+  position: absolute;
+  display: block;
+  top: 55px;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(11, 4, 28);
+  transition: all 0.5s ease-out;
+  display: flex;
+  flex-direction: column;
+  z-index: 99;
+  padding: 0;
+}
+.header .nav-links-mobile a {
+  text-decoration: none;
+  letter-spacing: 2px;
+  margin: 10px;
+  color: grey;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+}
+@media (max-width: 600px) {
+  .header .nav-links-mobile a {
+    text-align: center;
+    width: 100%;
+    color: white;
+    font-size: 16px;
+    padding: 12px 0;
+  }
+  .header .nav-links-mobile a:first-child {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 600px) {
+  .header .nav-links-mobile svg {
+    margin-top: 35px;
+    width: 100%;
+    height: 100%;
+  }
+}
+.header .mobile-menu-icons {
+  display: none;
+}
+@media (max-width: 600px) {
+  .header .mobile-menu-icons {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+  }
+}
+.header .buttonLink {
+  background: none;
+  margin-left: 15px;
+  border: 2px solid rgb(68, 67, 67);
+  padding: 10px;
+  color: rgb(68, 67, 67);
+  letter-spacing: 1px;
+  font-family: "Roboto", sans-serif;
+  padding: 7px 15px;
+}
+.header .buttonLink:hover {
+  background: black;
+}
+@media (max-width: 600px) {
+  .header .buttonLink {
+    text-align: center;
+    border: 2px solid white;
+    margin: 5%;
+  }
+}
+.header .buttonLink .viewPlans {
+  padding: 0;
+  margin: 0;
+  color: black;
+}
+@media (max-width: 600px) {
+  .header .buttonLink .viewPlans {
+    color: white;
+  }
+}
+.header .buttonLink .viewPlans:hover {
+  color: white;
+}
+
+.offers {
+  margin: 250px 0 0 100px;
+}
+@media (max-width: 400px) {
+  .offers {
+    margin: 150px 20px 100px 20px;
+  }
+}
+@media (min-width: 401px) and (max-width: 720px) {
+  .offers {
+    margin: 250px 10% 0 10%;
+  }
+}
+@media (max-width: 400px) {
+  .offers div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.offers div hr {
+  margin: 0;
+  width: 10%;
+}
+@media (max-width: 400px) {
+  .offers div hr {
+    width: 30%;
+  }
+}
+.offers h1 {
+  font-size: 3rem;
+}
+@media (max-width: 400px) {
+  .offers h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+}
+.offers .Scheme {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  gap: 0 10px;
+}
+@media (max-width: 400px) {
+  .offers .Scheme {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .offers .Scheme .scheme1, .offers .Scheme .scheme2, .offers .Scheme .scheme3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (min-width: 401px) and (max-width: 720px) {
+  .offers .Scheme {
+    display: flex;
+    flex-direction: column;
+  }
+  .offers .Scheme .scheme1, .offers .Scheme .scheme2, .offers .Scheme .scheme3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.offers .Scheme h3 {
+  font-size: 1.5rem;
+}
+@media (max-width: 400px) {
+  .offers .Scheme h3 {
+    margin-bottom: 0;
+  }
+}
+.offers .Scheme p {
+  letter-spacing: 0.5px;
+  line-height: 1.5em;
+  color: grey;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+@media (max-width: 400px) {
+  .offers .Scheme p {
+    text-align: center;
+    margin: 10px 13px 30px 10px;
+  }
+}
+@media (min-width: 401px) and (max-width: 720px) {
+  .offers .Scheme p {
+    padding-bottom: 20px;
+  }
+}
+
+.findMore {
+  background: rgb(11, 4, 28);
+  height: 250px;
+  margin: 100px 10% 0 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+.findMore::before {
+  content: "";
+  background-image: url("./bg-pattern-how-we-work-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+@media (max-width: 400px) {
+  .findMore {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    height: 340px;
+  }
+  .findMore::before {
+    content: "";
+    background-image: url("./bg-pattern-how-we-work-mobile.svg");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: top right;
+    position: absolute;
+    top: 0;
+  }
+}
+@media (max-width: 720px) {
+  .findMore {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px;
+  }
+  .findMore::before {
+    content: "";
+    background-image: url("./bg-pattern-how-we-work-mobile.svg");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: top right;
+    position: absolute;
+    top: 0;
+  }
+}
+.findMore .howwework h1 {
+  color: white;
+  font-size: 3rem;
+}
+@media (max-width: 400px) {
+  .findMore .howwework h1 {
+    margin: 0;
+    padding-bottom: 2.5rem;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 920px) {
+  .findMore .howwework h1 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 720px) {
+  .findMore .howwework h1 {
+    font-size: 2.5rem;
+    padding: 0;
+    margin: 0;
+  }
+}
+.findMore .button {
+  position: relative;
+}
+@media (max-width: 400px) {
+  .findMore .button div {
+    margin: 0;
+  }
+}
+.findMore .button div a {
+  background: none;
+  margin-left: 0;
+  border: 2px solid white;
+  padding: 10px;
+  color: white;
+  letter-spacing: 1px;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+.findMore .button div a:hover {
+  color: black;
+  background-color: white;
+}
+@media (max-width: 400px) {
+  .findMore .button div a {
+    margin: 0;
+  }
+}
+
+.footer {
+  background: rgba(235, 233, 233, 0.418);
+  margin-top: 100px;
+  width: 100%;
+  position: relative;
+}
+@media (max-width: 720px) {
+  .footer {
+    position: relative;
+    padding: 0;
+    width: 100%;
+  }
+}
+.footer .svg-footer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.footer .footer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 11% 0 11%;
+  padding: 43px 0 12px 0;
+}
+@media (max-width: 720px) {
+  .footer .footer-header {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+  .footer .footer-header h3 {
+    padding: 5rem 0 0 0;
+    text-align: center;
+  }
+  .footer .footer-header .social-media-icons {
+    display: flex;
+    justify-content: center;
+  }
+}
+.footer .footer-header .homelink {
+  font-family: "Krona One", sans-serif;
+  color: black;
+}
+.footer .footer-header a {
+  padding: 10px;
+}
+.footer hr {
+  width: 78%;
+}
+@media (max-width: 400px) {
+  .footer hr {
+    width: 90%;
+    margin-top: 1.5em;
+  }
+}
+@media (max-width: 720px) {
+  .footer hr {
+    width: 50%;
+  }
+}
+.footer .queries-info {
+  margin: 0 20% 0 12%;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Roboto", sans-serif;
+}
+@media (max-width: 720px) {
+  .footer .queries-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+  }
+  .footer .queries-info .ourcompany, .footer .queries-info .helpme, .footer .queries-info .contact, .footer .queries-info .others {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.footer .queries-info div h4 {
+  color: grey;
+  letter-spacing: 1.2px;
+  font-size: 12px;
+  padding: 15px 0;
+}
+.footer .queries-info div h3 {
+  color: rgb(68, 67, 67);
+  letter-spacing: 1.2px;
+  font-size: 12px;
+}/*# sourceMappingURL=Style.css.map */

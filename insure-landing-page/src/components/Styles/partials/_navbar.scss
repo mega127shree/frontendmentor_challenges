@@ -1,0 +1,117 @@
+.header{
+  display: flex;
+  justify-content:space-around;
+  @include width(100%);
+  height: 70px;
+  align-items: center;
+   .homelink{
+      font-family: $navFont;
+      color:$homeLink;
+      @media(max-width:600px){
+        position: absolute;
+        left:20px;
+        font-size: 1.3rem;
+      }
+   }
+   .nav-links{
+    padding-left: 100px;
+    a{
+      text-decoration: none;
+      letter-spacing: 2px;
+       @include margin(10px);
+       color:$links;
+        font-weight:600;
+       font-family: $navFonttwo;
+        font-size:  $fontMin;
+        &:hover{
+          color:black;
+        }
+    }
+    @media(max-width:600px){
+      display: none;
+    }
+    
+    svg{
+      display: none;
+    }
+   }
+   .nav-links-mobile{
+  position: absolute;
+  display: block;
+  top: 55px;
+  left:0;
+  @include width(100%);
+  height:100vh;
+  background-color:$layoutBackground;
+  transition:all 0.5s ease-out;
+  display: flex;
+  flex-direction: column;
+  z-index:99;
+  padding: 0; 
+    a{
+      text-decoration: none;
+      letter-spacing: 2px;
+       @include margin(10px);
+       color:$links;
+        font-weight:600;
+       font-family: $navFonttwo;
+        font-size:  $fontMin;
+        
+        @media(max-width:600px){
+          &:first-child{
+             margin-top: 30px;
+          }
+          text-align: center;
+          @include width(100%);
+          color:$white;
+         font-size:16px;
+          padding:12px 0;
+        }    
+  }
+  svg{
+    
+    @media(max-width:600px){
+      margin-top:35px;
+       @include width(100%);
+       height:100%;
+    }
+  }
+}
+.mobile-menu-icons{
+display: none;
+@media(max-width:600px){
+  display: block;
+  position: absolute;
+  top:15px;
+  right:10px;
+  border:none;
+outline:none;
+background:transparent;
+}
+}
+   .buttonLink{
+       @include buttonFormat($buttonColor,15px);
+        padding:7px 15px;
+       &:hover{
+        background: $homeLink;
+       }
+       @media(max-width:600px){
+         
+        text-align: center;
+        border:2px solid $white;
+        @include margin(5%);
+       }
+       .viewPlans{
+        padding:0;
+        @include margin(0);
+        color:$homeLink;
+        @media(max-width:600px){
+          color:$white;
+        }
+        &:hover{
+          color:$white;
+        }
+       }  
+     }
+    
+    }

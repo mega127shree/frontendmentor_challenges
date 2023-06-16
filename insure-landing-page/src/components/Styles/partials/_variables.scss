@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+//Colors
+$links:grey;
+$homeLink:black;
+$layoutBackground:rgb(11, 4, 28);
+$white:white;
+$buttonColor:  rgb(68, 67, 67);
+
+//Fonts Family
+$navFont: 'Krona One', sans-serif;
+$navFonttwo: 'Roboto', sans-serif;
+
+//Font size
+$fontMin:12px;
+$fontMintwo:14px;
+$fontMax:3rem;
+
+@mixin buttonFormat($r,$ml){
+    background: none;
+    margin-left: $ml;
+    border:2px solid $r;
+    padding: 10px;
+    color:$r;
+    letter-spacing: 1px;
+    font-family:$navFonttwo;
+}
+ 
+@mixin margin($m){
+    margin:$m;
+}
+@mixin width($w){
+    width:$w;
+}
+ 
